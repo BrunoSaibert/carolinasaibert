@@ -1,4 +1,5 @@
-import { format, formatISO } from "date-fns";
+import { formatISO } from "date-fns";
+import { format } from "date-fns-tz";
 
 type Props = {
   date: Date;
@@ -6,7 +7,11 @@ type Props = {
 export default function Date({ date }: Props) {
   return (
     <time dateTime={formatISO(date)}>
-      <span>{format(date, "LLLL d, yyyy")}</span>
+      <span>
+        {format(date, "dd/MM/yyyy", {
+          timeZone: "America/Sao_Paulo",
+        })}
+      </span>
       <style jsx>
         {`
           span {

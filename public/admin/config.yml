@@ -7,39 +7,58 @@ publish_mode: editorial_workflow
 
 collections:
   - name: "config"
-    label: "Config"
+    label: "Configurações"
     delete: false
     editor:
       preview: false
     files:
       - name: "general"
-        label: "Site Config"
+        label: "Configuração do site"
         file: "config.json"
-        description: "General site settings"
+        description: "Configurações gerais do site"
         fields:
           - label: "URL"
             name: "base_url"
             widget: "string"
-            hint: "Do not enter the trailing slash of the URL"
-          - label: "Site title"
+            hint: "Não insira a barra final do URL"
+          - label: "Título"
             name: "site_title"
             widget: "string"
-          - label: "Site description"
+          - label: "Descrição"
             name: "site_description"
             widget: "string"
-          - label: "Site keywords"
+          - label: "Palavras-chave"
             name: "site_keywords"
             widget: "list"
             summary: "{{fields.keyword.keyword}}"
             field:
-              label: Keyword
+              label: "Palavra-chave"
               name: keyword
               widget: "string"
-          - label: "Twitter account"
+          - label: "Qtd Posts por página"
+            name: "posts_per_page"
+            widget: "number"
+            default: 5
+            value_type: "int"
+            min: 1
+            max: 20
+          - label: "Twitter"
             name: "twitter_account"
             widget: "string"
-          - label: "GitHub account"
-            name: "github_account"
+          - label: "Instagram"
+            name: "instagram_account"
+            widget: "string"
+          - label: "LinkedIn"
+            name: "linkedin_account"
+            widget: "string"
+          - label: "E-mail"
+            name: "mail_account"
+            widget: "string"
+          - label: "Telefone"
+            name: "phone_number"
+            widget: "string"
+          - label: "Cor primária"
+            name: "color_primary"
             widget: "string"
 
   - name: "meta"
@@ -49,24 +68,29 @@ collections:
       preview: false
     files:
       - name: "authors"
-        label: "Authors"
+        label: "Autores"
         file: "meta/authors.yml"
         description: "Author descriptions"
         fields:
           - name: authors
-            label: Authors
-            label_singular: "Author"
+            label: Autores
+            label_singular: "Autor"
             widget: list
             fields:
               - label: "Slug"
                 name: "slug"
+                required: true
+                pattern:
+                  [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "Um slug não pode ter espaços ou caracteres especiais",
+                  ]
                 widget: "string"
-                hint: "The part of a URL identifies the author"
-              - label: "Name"
+                hint: "A parte de um URL identifica o autor"
+              - label: "Nome"
                 name: "name"
                 widget: "string"
-                hint: "First and Last"
-              - label: "Introduction"
+              - label: "Introdução"
                 name: "introduction"
                 widget: "text"
       - name: "tags"
@@ -81,15 +105,21 @@ collections:
             fields:
               - label: "Slug"
                 name: "slug"
+                required: true
+                pattern:
+                  [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "Um slug não pode ter espaços ou caracteres especiais",
+                  ]
                 widget: "string"
-                hint: "The part of a URL identifies the tag"
-              - label: "Display Name"
+                hint: "A parte de um URL identifica a tag"
+              - label: "Nome"
                 name: "name"
                 widget: "string"
-                hint: "Tag name for displaying on the site"
+                hint: "Nome da tag para exibição no site"
 
   - name: "posts"
-    label: "Posts"
+    label: "Postagens"
     folder: "src/pages/posts"
     extension: "mdx"
     format: "frontmatter"
@@ -100,17 +130,23 @@ collections:
     fields:
       - label: "Slug"
         name: "slug"
+        required: true
+        pattern:
+          [
+            "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "Um slug não pode ter espaços ou caracteres especiais",
+          ]
         widget: "string"
-      - label: "Title"
+      - label: "Título"
         name: "title"
         widget: "string"
-      - label: "Publish Date"
+      - label: "Data Publicação"
         name: "date"
         widget: "datetime"
-        format: "YYYY-MM-DD"
-        dateFormat: "YYYY-MM-DD"
+        format: "DD-MM-YYYY"
+        dateFormat: "DD-MM-YYYY"
         timeFormat: false
-      - label: Author
+      - label: Autor
         name: "author"
         widget: relation
         collection: "meta"
@@ -136,6 +172,6 @@ collections:
           displayFields:
             - "tags.*.name"
           valueField: "tags.*.slug"
-      - label: "Body"
+      - label: "Texto"
         name: "body"
         widget: "markdown"

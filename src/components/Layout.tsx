@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Navigation from "./Navigation";
 
+import config from "../lib/config";
+
 type Props = {
   children: React.ReactNode;
 };
@@ -12,7 +14,7 @@ export default function Layout({ children }: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="apple-touch-icon" href="/icon.png" />
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content={config.color_primary} />
       </Head>
       <nav>
         <Navigation />
@@ -29,6 +31,7 @@ export default function Layout({ children }: Props) {
           main {
             display: flex;
             min-height: 100%;
+            margin-top: 20px;
           }
           @media (min-width: 769px) {
             .root {
