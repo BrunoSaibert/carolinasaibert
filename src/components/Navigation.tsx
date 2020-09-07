@@ -4,7 +4,7 @@ import Burger from "./Burger";
 import Brand from "./Brand";
 import { useState } from "react";
 
-import { lighten } from "polished";
+import { lighten, darken } from "polished";
 
 import config from "../lib/config";
 
@@ -44,7 +44,7 @@ export default function Navigation() {
         {`
           .nav {
             display: block;
-            background-color: ${lighten(0.4, config.color_primary)};
+            background-color: ${lighten(0.3, config.color_primary)};
             position: fixed;
             top: 0;
             left: 0;
@@ -70,8 +70,17 @@ export default function Navigation() {
             font-size: 1rem;
             padding: 0 0 0 1.5rem;
           }
+          a {
+            font-weight: 500;
+            color: #999;
+            color: ${config.color_primary};
+            text-decoration: none;
+            transition: color 0.3s ease;
+          }
+          a:active,
+          a:hover,
           .active {
-            color: #222;
+            color: ${darken(0.3, config.color_primary)};
           }
 
           @media (max-width: 769px) {

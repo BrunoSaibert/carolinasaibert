@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { darken } from "polished";
+
 import config from "../lib/config";
 
 export default function Date() {
@@ -12,7 +14,7 @@ export default function Date() {
         {`
           a {
             cursor: pointer;
-            color: ${config.color_primary};
+            color: ${darken(0.3, config.color_primary)};
             font-weight: bold;
           }
         `}
