@@ -144,8 +144,8 @@ collections:
       - label: "Data Publicação"
         name: "date"
         widget: "datetime"
-        format: "DD-MM-YYYY"
-        dateFormat: "DD-MM-YYYY"
+        format: "YYYY-MM-DD"
+        dateFormat: "YYYY-MM-DD"
         timeFormat: false
       - label: Autor
         name: "author"
