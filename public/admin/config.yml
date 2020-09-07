@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: BrunoSaibert/carolinasaibert
   branch: master
 media_folder: public/images
 public_folder: /images
