@@ -1,7 +1,8 @@
 {
-  "base_url": "https://carolsaibert.netlify.app",
+  "instagram_account": "bruno_hs",
   "site_title": "Carolina Saibert",
-  "site_description": "Site e blog de Carolina Saibert",
+  "twitter_account": "@my-account",
+  "base_url": "https://carolsaibert.netlify.app",
   "site_keywords": [
     {
       "keyword": "Next.js"
@@ -13,11 +14,10 @@
       "keyword": "React"
     }
   ],
-  "posts_per_page": 5,
-  "twitter_account": "@my-account",
-  "instagram_account": "bruno_hs",
-  "linkedin_account": "brunohenriquesaibert",
+  "site_description": "Site e blog de Carolina Saibert",
   "mail_account": "brunosaibert@gmail.com",
+  "color_primary": "tomato",
+  "linkedin_account": "brunohenriquesaibert",
   "phone_number": "(41) 99675-8098",
-  "color_primary": "#7159c1"
+  "posts_per_page": 5
 }
