@@ -1,5 +1,5 @@
 {
-  "instagram_account": "psicocarolsaibert",
+  "instagram_account": "https://www.instagram.com/psicocarolsaibert/",
   "site_title": "Carolina Saibert",
   "twitter_account": "@my-account",
   "base_url": "https://carolsaibert.netlify.app",
@@ -14,7 +14,7 @@
       "keyword": "React"
     }
   ],
-  "site_description": "Site e blog de Carolina Saibert",
+  "site_description": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022",
   "mail_account": "psicocarolsaibert@gmail.com",
   "color_primary": "#3b9778",
   "linkedin_account": "carolinasaibert",
