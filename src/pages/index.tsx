@@ -3,6 +3,7 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
+import Copyright from "../components/Copyright";
 
 import config from "../lib/config";
 
@@ -14,19 +15,20 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container">
         <div>
-          <h1>
-            Olá, meu nome é <span className="fancy">Carolina Saibert</span>.
-          </h1>
-          {/* <span className="handle">@nextjs-netlify-blog</span> */}
-          <h2>Aqui vem um resumo simples sobre quem eu sou.</h2>
+          <h1>{config.home_title}</h1>
+          <h2>{config.home_description}</h2>
           <SocialList />
         </div>
+        <footer>
+          <Copyright />
+        </footer>
       </div>
       <style jsx>{`
         .container {
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-direction: column;
           flex: 1 1 auto;
           padding: 0 1.5rem;
         }
@@ -34,14 +36,12 @@ export default function Index() {
           font-size: 2.5rem;
           margin: 0;
           font-weight: 500;
+          color: ${config.color_primary};
         }
         h2 {
           font-size: 1.75rem;
           font-weight: 400;
           line-height: 1.25;
-        }
-        .fancy {
-          color: ${config.color_primary};
         }
         .handle {
           display: inline-block;

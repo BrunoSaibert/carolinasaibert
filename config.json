@@ -5,13 +5,10 @@
   "base_url": "https://carolsaibert.netlify.app",
   "site_keywords": [
     {
-      "keyword": "Next.js"
+      "keyword": "Psicóloga"
     },
     {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
+      "keyword": "Gislaine Carolina Saibert"
     }
   ],
   "site_description": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022",
@@ -19,5 +16,8 @@
   "color_primary": "#3b9778",
   "linkedin_account": "carolinasaibert",
   "phone_number": "(41) 98763-6464",
-  "posts_per_page": 5
+  "posts_per_page": 5,
+  "home_title": "Olá, meu nome é Carolina Saibert",
+  "home_description": "Psicóloga clinica e Online",
+  "copy": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022"
 }
