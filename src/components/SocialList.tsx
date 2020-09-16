@@ -15,14 +15,6 @@ export function SocialList({}) {
   return (
     <div>
       <a
-        title="LinkedIn"
-        href={`https://www.linkedin.com/in/${config.linkedin_account}`}
-        target="_blank"
-        rel="noopener"
-      >
-        <FaLinkedinIn size={22} />
-      </a>
-      <a
         title="Instagram"
         href={`https://www.instagram.com/${config.instagram_account}`}
         target="_blank"
