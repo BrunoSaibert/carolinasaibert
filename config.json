@@ -1,23 +1,24 @@
 {
   "instagram_account": "https://www.instagram.com/psicocarolsaibert/",
-  "site_title": "Carolina Saibert",
+  "site_title": "Carol Saibert - Psicóloga",
   "twitter_account": "@my-account",
-  "base_url": "https://carolsaibert.netlify.app",
+  "base_url": "https://psicocarolsaibert.netlify.app",
   "site_keywords": [
     {
       "keyword": "Psicóloga"
     },
     {
       "keyword": "Gislaine Carolina Saibert"
-    }
+    },
+    "Abordagem centrada na pessoa"
   ],
   "site_description": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022",
   "mail_account": "psicocarolsaibert@gmail.com",
   "color_primary": "#3b9778",
   "linkedin_account": "carolinasaibert",
-  "phone_number": "(41) 98763-6464",
-  "posts_per_page": 5,
+  "copy": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022",
   "home_title": "Olá, meu nome é Carolina Saibert",
+  "phone_number": "(41) 98763-6464",
   "home_description": "Psicóloga clinica e Online",
-  "copy": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022"
+  "posts_per_page": 5
 }
