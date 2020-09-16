@@ -39,7 +39,7 @@ export default function Layout({ children }: Props) {
               flex: 1 0 auto;
             }
             main {
-              flex: 1 0 auto;
+              flex: 1 1 auto;
             }
           }
         `}
