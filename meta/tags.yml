@@ -1,3 +1,13 @@
 tags:
-  - slug: tag
-    name: Tag
+  - slug: closecultural
+    name: Close Cultural
+  - name: Psicoterapia
+    slug: psicoterapia
+  - name: Setembro Amarelo
+    slug: setembroamarelo
+  - name: Reflexões
+    slug: reflexoes
+  - name: Psicologia e Sociedade
+    slug: psicologiaesociedade
+  - name: Abordagem Centrada na Pessoa - ACP
+    slug: abordagemcentradanapessoaacp
