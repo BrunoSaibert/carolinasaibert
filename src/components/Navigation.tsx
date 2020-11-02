@@ -1,10 +1,10 @@
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { lighten, darken } from "polished";
+
 import Burger from "./Burger";
 import Brand from "./Brand";
-import { useState } from "react";
-
-import { lighten, darken } from "polished";
 
 import config from "../lib/config";
 
@@ -21,6 +21,33 @@ export default function Navigation() {
             <li>
               <Link href="/">
                 <a className={router.pathname === "/" ? "active" : null}>
+                  Início
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/como-funciona">
+                <a
+                  className={
+                    router.pathname === "/como-funciona" ? "active" : null
+                  }
+                >
+                  Como Funciona
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/servicos">
+                <a
+                  className={router.pathname === "/servicos" ? "active" : null}
+                >
+                  Serviços
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sobre">
+                <a className={router.pathname === "/sobre" ? "active" : null}>
                   Sobre
                 </a>
               </Link>
@@ -33,6 +60,13 @@ export default function Navigation() {
                   }
                 >
                   Blog
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contato">
+                <a className={router.pathname === "/contato" ? "active" : null}>
+                  Contato
                 </a>
               </Link>
             </li>
@@ -76,6 +110,7 @@ export default function Navigation() {
             color: ${config.color_primary};
             text-decoration: none;
             transition: color 0.3s ease;
+            text-transform: lowercase;
           }
           a:active,
           a:hover,

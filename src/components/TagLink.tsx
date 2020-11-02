@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import { TagContent } from "../lib/tags";
 
 type Props = {

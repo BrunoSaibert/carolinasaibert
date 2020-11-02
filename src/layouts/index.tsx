@@ -1,6 +1,8 @@
-import Head from "next/head";
 import React from "react";
+import Head from "next/head";
+
 import styles from "../../public/styles/content.module.css";
+
 import Author from "../components/Author";
 import Copyright from "../components/Copyright";
 import Date from "../components/Date";
@@ -11,6 +13,7 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 import TagButton from "../components/TagButton";
+
 import { getAuthor } from "../lib/authors";
 import { getTag } from "../lib/tags";
 
@@ -94,7 +97,7 @@ export default function Index({
               display: block;
               max-width: 36rem;
               width: 100%;
-              margin: 0 auto;
+              margin: 100px auto 0;
               padding: 0 1.5rem;
               box-sizing: border-box;
             }

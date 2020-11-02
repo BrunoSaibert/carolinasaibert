@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { TagContent } from "../lib/tags";
-
 import { lighten } from "polished";
 
 import config from "../lib/config";
+import { TagContent } from "../lib/tags";
 
 type Props = {
   tag: TagContent;

@@ -1,11 +1,6 @@
 import React from "react";
 
-import {
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 import { lighten } from "polished";
 

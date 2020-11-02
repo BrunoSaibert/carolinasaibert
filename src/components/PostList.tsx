@@ -1,8 +1,10 @@
 import React from "react";
-import { PostContent } from "../lib/posts";
-import PostItem from "./PostItem";
+
 import TagLink from "./TagLink";
+import PostItem from "./PostItem";
 import Pagination from "./Pagination";
+
+import { PostContent } from "../lib/posts";
 import { TagContent } from "../lib/tags";
 
 type Props = {
@@ -43,7 +45,7 @@ export default function PostList({ posts, tags, pagination }: Props) {
       <style jsx>{`
         .container {
           display: flex;
-          margin: 0 auto;
+          margin: 100px auto 50px;
           max-width: 1200px;
           width: 100%;
           padding: 0 1.5rem;

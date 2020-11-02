@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import Navigation from "./Navigation";
 
 import config from "../lib/config";
@@ -24,14 +25,13 @@ export default function Layout({ children }: Props) {
         {`
           .root {
             display: block;
-            padding: 4rem 0;
+            padding: 0;
             box-sizing: border-box;
             height: 100%;
           }
           main {
             display: flex;
             min-height: 100%;
-            margin-top: 20px;
           }
           @media (min-width: 769px) {
             .root {

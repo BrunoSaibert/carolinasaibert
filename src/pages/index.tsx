@@ -31,6 +31,10 @@ export default function Index() {
           flex-direction: column;
           flex: 1 1 auto;
           padding: 0 1.5rem;
+          background: url("/images/kelly-sikkema-725mC9b9Auk-unsplash.jpg")
+            no-repeat;
+          background-position: center top;
+          background-size: cover;
         }
         h1 {
           font-size: 2.5rem;

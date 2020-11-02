@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { darken } from "polished";
 
 import config from "../lib/config";
