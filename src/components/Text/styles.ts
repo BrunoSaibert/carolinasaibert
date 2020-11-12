@@ -22,8 +22,9 @@ export const Container = styled.p<{
         content: "";
         width: 60px;
         height: 2px;
-        background-color: ${(props) =>
-          props.color ? config.color[props.color] : config.color.primary};
+        background-color: ${props.color
+          ? config.color[props.color]
+          : config.color.primary};
         display: block;
         ${props.align === "center" && `margin: 0 auto;`}
         margin-top: 0.5rem;
