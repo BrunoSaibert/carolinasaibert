@@ -19,6 +19,7 @@ type Config = {
     url: string;
   }[];
   readonly color: {
+    primaryDark: string;
     primary: string;
     secondary: string;
     tertiary: string;
