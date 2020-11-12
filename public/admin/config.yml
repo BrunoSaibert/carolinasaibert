@@ -67,9 +67,6 @@ collections:
           - label: "Telefone"
             name: "phone_number"
             widget: "string"
-          - label: "Cor primária"
-            name: "color_primary"
-            widget: "string"
 
   - name: "meta"
     label: "Meta"

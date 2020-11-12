@@ -1,7 +1,11 @@
-import "normalize.css";
 import { AppProps } from "next/app";
-import "../../public/styles/global.css";
+import GlobalStyle from "../styles/global";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} />
+      <GlobalStyle />
+    </>
+  );
 }

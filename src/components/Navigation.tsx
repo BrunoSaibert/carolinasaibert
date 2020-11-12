@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { lighten, darken } from "polished";
 
 import Burger from "./Burger";
 import Brand from "./Brand";
@@ -18,58 +17,15 @@ export default function Navigation() {
           <Brand />
           <Burger active={active} onClick={() => setActive(!active)} />
           <ul>
-            <li>
-              <Link href="/">
-                <a className={router.pathname === "/" ? "active" : null}>
-                  Início
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/como-funciona">
-                <a
-                  className={
-                    router.pathname === "/como-funciona" ? "active" : null
-                  }
-                >
-                  Como Funciona
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/servicos">
-                <a
-                  className={router.pathname === "/servicos" ? "active" : null}
-                >
-                  Serviços
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/sobre">
-                <a className={router.pathname === "/sobre" ? "active" : null}>
-                  Sobre
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/posts">
-                <a
-                  className={
-                    router.pathname.startsWith("/posts") ? "active" : null
-                  }
-                >
-                  Blog
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contato">
-                <a className={router.pathname === "/contato" ? "active" : null}>
-                  Contato
-                </a>
-              </Link>
-            </li>
+            {config.pages.map(({ title, url }) => (
+              <li key={url}>
+                <Link href={url}>
+                  <a className={router.pathname === url ? "active" : null}>
+                    {title}
+                  </a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -78,7 +34,7 @@ export default function Navigation() {
         {`
           .nav {
             display: block;
-            background-color: ${lighten(0.3, config.color_primary)};
+            background-color: ${config.color.tertiary};
             position: fixed;
             top: 0;
             left: 0;
@@ -89,7 +45,7 @@ export default function Navigation() {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.25em;
-            height: 50px;
+            height: 70px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -106,29 +62,29 @@ export default function Navigation() {
           }
           a {
             font-weight: 500;
-            color: #999;
-            color: ${config.color_primary};
+            color: ${config.color.light};
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
             text-transform: lowercase;
           }
           a:active,
           a:hover,
           .active {
-            color: ${darken(0.3, config.color_primary)};
+            color: ${config.color.primary};
+            border-bottom: 1px solid ${config.color.primary};
           }
 
           @media (max-width: 769px) {
             ul {
               opacity: 0;
               width: 100%;
-              height: 100vh;
-              margin: 50px 0 0;
+              height: calc(100vh - 70px);
+              margin: 70px 0 0;
               padding: 0;
               position: fixed;
               top: 0;
               left: 0;
-              background-color: #fff;
+              background-color: ${config.color.light};
               flex-direction: column;
               text-align: right;
               transform: translateY(100%);
@@ -139,9 +95,12 @@ export default function Navigation() {
               transform: translateY(0);
             }
             li {
-              margin-bottom: 1.75rem;
-              font-size: 2rem;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
               padding: 0 1.5rem 0 0;
+            }
+            a {
+              color: ${config.color.dark};
             }
           }
         `}

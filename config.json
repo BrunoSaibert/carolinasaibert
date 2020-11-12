@@ -9,17 +9,48 @@
     },
     {
       "keyword": "Gislaine Carolina Saibert"
-    },
-    "Abordagem centrada na pessoa",
-    "Atendimento Online"
+    }
   ],
   "site_description": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022",
   "mail_account": "psicocarolsaibert@gmail.com",
-  "color_primary": "#3b9778",
   "linkedin_account": "carolinasaibert",
   "copy": "Psicóloga Gislaine Carolina Saibert - CRP 08/26022",
-  "home_title": "Carol Saibert - Psicóloga Clínica",
   "phone_number": "(41) 98763-6464",
+  "home_title": "Carol Saibert - Psicóloga Clínica",
   "home_description": "Atendimento psicológico online. Entre em contato por um dos canais abaixo para agendar seu horário!",
-  "posts_per_page": 5
+  "posts_per_page": 5,
+  "color": {
+    "primary": "#3b9778",
+    "secondary": "#93e9be",
+    "tertiary": "#f4b18c",
+    "light": "#fff",
+    "gray": "#f4ebeef1",
+    "dark": "#444"
+  },
+  "pages": [
+    {
+      "title": "Início",
+      "url": "/"
+    },
+    {
+      "title": "Como Funciona",
+      "url": "/como-funciona"
+    },
+    {
+      "title": "Serviços",
+      "url": "/servicos"
+    },
+    {
+      "title": "Sobre",
+      "url": "/sobre"
+    },
+    {
+      "title": "Blog",
+      "url": "/posts"
+    },
+    {
+      "title": "Contato",
+      "url": "/contato"
+    }
+  ]
 }
