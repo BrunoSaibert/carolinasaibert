@@ -32,7 +32,7 @@ export const Container = styled.div`
       padding: 0 0 0 1.5rem;
 
       a {
-        font-weight: 500;
+        font-weight: 600;
         color: ${config.color.light};
         text-decoration: none;
         transition: all 0.3s ease;

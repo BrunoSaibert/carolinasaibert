@@ -20,6 +20,7 @@
   "home_description": "Atendimento psicológico online. Entre em contato por um dos canais abaixo para agendar seu horário!",
   "posts_per_page": 5,
   "color": {
+    "primaryDark": "#307b62",
     "primary": "#3b9778",
     "secondary": "#93e9be",
     "tertiary": "#f4b18c",

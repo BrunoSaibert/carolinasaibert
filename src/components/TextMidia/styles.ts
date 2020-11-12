@@ -28,11 +28,6 @@ export const Content = styled.div`
 `;
 
 export const ImageWarper = styled.div<{ imgAling?: string }>`
-  /* position: relative; */
-
-  /* width: 100%; */
-  /* min-height: 200px; */
-
   margin: 0 ${(props) => (props.imgAling === "right" ? 0 : "1rem")} 0
     ${(props) => (props.imgAling === "left" ? 0 : "1rem")};
   order: ${(props) => (props.imgAling === "right" ? 1 : 0)};

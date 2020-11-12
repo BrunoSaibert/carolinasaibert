@@ -1,27 +1,45 @@
 import React, { ReactElement } from "react";
 
-import Text from "../Text";
-
-import config from "../../lib/config";
+import Text, { TextProps } from "../Text";
+import Button, { ButtonProps } from "../Button";
 
 import * as S from "./styles";
 
 interface Props {
   urlImg: string;
-  title: string | ReactElement;
-  subtitle: string | ReactElement;
+  size: "sm" | "md" | "lg";
+  title?: TextProps;
+  description?: TextProps;
+  cta?: ButtonProps;
 }
 
-const Hero: React.FC<Props> = ({ urlImg, title, subtitle }) => {
+const Hero: React.FC<Props> = ({ urlImg, size, title, description, cta }) => {
   return (
-    <S.Container urlImg={urlImg}>
+    <S.Container urlImg={urlImg} size={size}>
       <div>
-        <Text as="h1" color="primary">
-          {title}
-        </Text>
-        <Text as="h2" color="light">
-          {subtitle}
-        </Text>
+        {title && (
+          <Text
+            as={title.as}
+            color={title.color}
+            align={title.align}
+            decorator={title.decorator}
+            weight="bold"
+          >
+            {title.text}
+          </Text>
+        )}
+
+        {description && (
+          <Text
+            as={description.as}
+            color={description.color}
+            align={description.align}
+          >
+            {description.text}
+          </Text>
+        )}
+
+        {cta && <Button href={cta.href}>{cta.text}</Button>}
       </div>
     </S.Container>
   );

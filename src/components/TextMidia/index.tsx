@@ -41,7 +41,8 @@ const TextMidia: React.FC<Props> = ({
                 as={title.as}
                 color={title.color}
                 align={title.align}
-                className="title"
+                weight="bold"
+                decorator
               >
                 {title.text}
               </Text>

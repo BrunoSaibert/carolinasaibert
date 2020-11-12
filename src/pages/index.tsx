@@ -14,15 +14,33 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
 
       <Hero
+        size="lg"
         urlImg="/images/intro.jpg"
-        title="Psicologia, moda e autoestima"
-        subtitle={
-          <>
-            “Quando me aceito como sou estou me modificando”
-            <br />
-            Carl Rogers
-          </>
-        }
+        title={{
+          as: "h1",
+          color: "light",
+          align: "center",
+          text: "Psicologia, moda e autoestima",
+        }}
+        description={{
+          as: "blockquote",
+          color: "light",
+          align: "center",
+          text: (
+            <>
+              <p>
+                “quando me aceito como sou
+                <br />
+                estou me modificando”
+              </p>
+              <cite>Carl Rogers</cite>
+            </>
+          ),
+        }}
+        cta={{
+          href: "/servicos",
+          text: "Saiba mais",
+        }}
       />
 
       <TextMidia
@@ -32,7 +50,6 @@ export default function Index() {
           alt: "imagem de um guarda roupas",
           align: "right",
           props: {
-            // layout: "fill",
             width: 1297,
             height: 729,
           },

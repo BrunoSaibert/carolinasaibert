@@ -8,7 +8,7 @@ interface Props {
   color?: string;
 }
 
-const Text: React.FC<Props> = ({ href = "/", color = "primary" }) => {
+const Brand: React.FC<Props> = ({ href = "/", color = "primary" }) => {
   return (
     <Link prefetch href={href} passHref>
       <S.StyledLink color={color}>Carolina Saibert</S.StyledLink>
@@ -16,4 +16,4 @@ const Text: React.FC<Props> = ({ href = "/", color = "primary" }) => {
   );
 };
 
-export default Text;
+export default Brand;

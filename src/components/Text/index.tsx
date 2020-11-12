@@ -7,6 +7,8 @@ export interface TextProps {
   text?: any;
   color?: string;
   align?: "left" | "center" | "right" | "justify";
+  weight?: string;
+  decorator?: boolean;
 }
 
 const Text: React.FC<TextProps> = ({
@@ -15,10 +17,19 @@ const Text: React.FC<TextProps> = ({
   as = "p",
   align = "left",
   color,
+  weight,
+  decorator = false,
   ...props
 }) => {
   return (
-    <S.Container as={as} color={color} align={align} {...props}>
+    <S.Container
+      as={as}
+      color={color}
+      align={align}
+      weight={weight}
+      decorator={decorator}
+      {...props}
+    >
       {children || text}
     </S.Container>
   );
