@@ -39,13 +39,13 @@ export function SocialList({}) {
       <style jsx>{`
         a {
           display: inline-block;
-          color: ${config.color_primary};
+          color: ${config.color.primary};
         }
         a:not(:last-child) {
           margin-right: 2em;
         }
         a:hover {
-          color: ${lighten(0.2, config.color_primary)};
+          color: ${lighten(0.2, config.color.primary)};
         }
       `}</style>
     </div>

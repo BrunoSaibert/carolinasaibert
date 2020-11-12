@@ -14,18 +14,6 @@ export default function Container({ children, hasFooter = true }: Props) {
           <Copyright />
         </footer>
       )}
-      <style jsx>
-        {`
-          .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            flex: 1 1 auto;
-            padding: 0 1.5rem;
-          }
-        `}
-      </style>
     </div>
   );
 }

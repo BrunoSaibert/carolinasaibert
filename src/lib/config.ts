@@ -14,7 +14,18 @@ type Config = {
   readonly linkedin_account: string;
   readonly mail_account: string;
   readonly phone_number: string;
-  readonly color_primary: string;
+  readonly pages: {
+    title: string;
+    url: string;
+  }[];
+  readonly color: {
+    primary: string;
+    secondary: string;
+    tertiary: string;
+    light: string;
+    gray: string;
+    dark: string;
+  };
 };
 
-export default config as Config;
+export default (config as unknown) as Config;
