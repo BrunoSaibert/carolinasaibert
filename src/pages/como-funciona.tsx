@@ -6,6 +6,7 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 
 import Hero from "../components/Hero";
+import Text from "../components/Text";
 import TextMidia from "../components/TextMidia";
 
 export default function Index() {
@@ -17,7 +18,7 @@ export default function Index() {
 
       <Hero
         size="md"
-        urlImg="/images/inicio.jpg"
+        urlImg="/images/como_funciona.jpg"
         title={{
           as: "h1",
           color: "light",
@@ -34,7 +35,23 @@ export default function Index() {
       />
 
       <TextMidia
+        img={{
+          url: "/images/tour.svg",
+          alt: "imagem de contato",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        title={{
+          as: "h2",
+          text: "Escolha o serviço",
+          color: "primary",
+          align: "center",
+        }}
         description={{
+          align: "center",
           text: (
             <>
               Visite a aba de{" "}
@@ -45,34 +62,82 @@ export default function Index() {
             </>
           ),
         }}
-      />
-
-      <TextMidia
-        bgColor="gray"
-        description={{
-          text: (
-            <>
-              Caso fique em dúvida entre em contato comigo{" "}
-              <Link href="/contato">
-                <a>clicando aqui</a>
-              </Link>
-              . Podemos agendar uma conversa inicial sem compromisso para
-              avaliarmos juntos seu momento atual e qual a melhor forma de te
-              ajudar. Esta conversa inicial NÃO TEM CUSTO e nela vamos tirar
-              suas dúvidas e combinar os preços conforme o serviço escolhido
-            </>
-          ),
+        cta={{
+          href: "/serviços",
+          text: "Ver serviços",
         }}
       />
 
       <TextMidia
+        bgColor="tertiary"
+        img={{
+          url: "/images/question.svg",
+          alt: "imagem de contato",
+          align: "left",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        title={{
+          as: "h2",
+          text: "Ainda tem dúvidas?",
+          color: "primary",
+          align: "center",
+        }}
         description={{
+          align: "center",
+          color: "light",
+          text: (
+            <>
+              Podemos agendar uma conversa inicial sem compromisso para
+              avaliarmos juntos seu momento atual e qual a melhor forma de te
+              ajudar.
+              <br />
+              <br />
+              Esta conversa inicial <strong>NÃO TEM CUSTO</strong> e nela vamos
+              tirar suas dúvidas e combinar os preços conforme o serviço
+              escolhido.
+            </>
+          ),
+        }}
+        cta={{
+          href: "/contato",
+          text: "Entrar em contato",
+        }}
+      />
+
+      <TextMidia
+        img={{
+          url: "/images/people.svg",
+          alt: "imagem de contato",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        title={{
+          as: "h2",
+          text: "Quem pode contratar?",
+          color: "primary",
+          align: "center",
+        }}
+        description={{
+          align: "center",
           text: (
             <>
               Os serviços são oferecidos a qualquer pessoa que sinta que poderá
-              se beneficiar deles, TODES SÃO BEM VINDES!
+              se beneficiar deles.
+              <br />
+              <br />
+              <strong>TODES SÃO BEM VINDES!</strong>
             </>
           ),
+        }}
+        cta={{
+          href: "/contato",
+          text: "Entrar em contato",
         }}
       />
     </Layout>

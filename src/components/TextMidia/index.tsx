@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import Text, { TextProps } from "../Text";
+import Button, { ButtonProps } from "../Button";
 
 import * as S from "./styles";
 
@@ -17,6 +18,8 @@ interface Props {
   title?: TextProps;
   description?: TextProps;
   img?: ImageProps;
+  cta?: ButtonProps;
+  full?: boolean;
 }
 
 const TextMidia: React.FC<Props> = ({
@@ -24,9 +27,11 @@ const TextMidia: React.FC<Props> = ({
   title,
   description,
   img,
+  cta,
+  full,
 }) => {
   return (
-    <S.Container bgColor={bgColor}>
+    <S.Container bgColor={bgColor} full={full}>
       <S.Content>
         {img && (
           <S.ImageWarper imgAling={img.align}>
@@ -42,7 +47,7 @@ const TextMidia: React.FC<Props> = ({
                 color={title.color}
                 align={title.align}
                 weight="bold"
-                decorator
+                decorator={!!description}
               >
                 {title.text}
               </Text>
@@ -57,6 +62,8 @@ const TextMidia: React.FC<Props> = ({
                 {description.text}
               </Text>
             )}
+
+            {cta && <Button href={cta.href}>{cta.text}</Button>}
           </div>
         )}
       </S.Content>

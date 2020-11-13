@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React from "react";
 
 import Text, { TextProps } from "../Text";
 import Button, { ButtonProps } from "../Button";

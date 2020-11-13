@@ -9,7 +9,7 @@ export const Container = styled.a`
   justify-content: center;
 
   max-width: 16.25rem;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
   padding: 0.9375rem;
 
   border: 0;
@@ -30,5 +30,10 @@ export const Container = styled.a`
 
   &:hover {
     transform: scale(1.1);
+    opacity: 1;
+  }
+
+  @media (max-width: 769px) {
+    max-width: 100%;
   }
 `;

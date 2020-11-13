@@ -1,16 +1,27 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import config from "../../lib/config";
 
-export const Container = styled.section<{ bgColor?: string }>`
+export const Container = styled.section<{ bgColor?: string; full?: boolean }>`
   background-color: ${(props) => config.color[props.bgColor] || "#fff"};
   padding: 5rem 0;
+
+  ${(props) =>
+    props.full &&
+    css`
+      flex: 1 1 auto;
+      min-height: calc(100vh - 70px);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `}
 `;
 
 export const Content = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.25em;
+  padding: 0 1.5em;
 
   display: flex;
   align-items: center;

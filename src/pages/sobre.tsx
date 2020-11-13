@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import Container from "../components/Container";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
@@ -15,8 +14,8 @@ export default function Index() {
       <TwitterCardMeta url={"/sobre"} />
 
       <Hero
-        size="sm"
-        urlImg="/images/inicio.jpg"
+        size="md"
+        urlImg="/images/sobre.jpg"
         title={{
           as: "h1",
           color: "light",
@@ -33,23 +32,49 @@ export default function Index() {
       />
 
       <TextMidia
+        img={{
+          url: "/images/carol.jpg",
+          alt: "imagem de contato",
+          align: "left",
+          props: {
+            width: 800,
+            height: 800,
+          },
+        }}
+        title={{
+          as: "h2",
+          text: "Carol Saibert",
+          color: "primary",
+          align: "center",
+        }}
         description={{
           align: "center",
           text: (
             <>
-              Sou a Carol Saibert, Psicóloga graduada pela Universidade
-              Positivo, com formação em Consultoria de Estilo pela Estilo Rio e
-              estudante de Psicologia da Moda (Fashion Psychology), área ainda
-              pouco desenvolvida no Brasil.
+              <strong>Psicóloga</strong> graduada pela{" "}
+              <strong>Universidade Positivo</strong>, com formação em{" "}
+              <strong>Consultoria de Estilo</strong> pela{" "}
+              <strong>Estilo Rio</strong> e estudante de Psicologia da Moda
+              (Fashion Psychology), área ainda pouco desenvolvida no Brasil.
             </>
           ),
         }}
       />
 
       <TextMidia
-        bgColor="gray"
+        bgColor="tertiary"
+        img={{
+          url: "/images/friend.svg",
+          alt: "imagem de contato",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
         description={{
           align: "center",
+          color: "light",
           text: (
             <>
               Apaixonada por pessoas e pela forma como cada uma expressa seu
@@ -62,6 +87,15 @@ export default function Index() {
       />
 
       <TextMidia
+        img={{
+          url: "/images/knowledge.svg",
+          alt: "imagem de contato",
+          align: "left",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
         description={{
           align: "center",
           text: (

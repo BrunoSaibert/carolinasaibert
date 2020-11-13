@@ -26,7 +26,6 @@ export const Container = styled.section<{
 
   & > div {
     max-width: 800px;
-    padding: 1.5rem;
   }
 
   @media (max-width: 769px) {

@@ -44,14 +44,13 @@ export default function Index() {
       />
 
       <TextMidia
-        bgColor="gray"
         img={{
-          url: "/images/guardaroupas.jpg",
+          url: "/images/clothes.svg",
           alt: "imagem de um guarda roupas",
-          align: "right",
+          align: "left",
           props: {
-            width: 1297,
-            height: 729,
+            width: 1000,
+            height: 800,
           },
         }}
         title={{ text: "Se você:", as: "h2", color: "primary" }}
@@ -76,6 +75,16 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="tertiary"
+        img={{
+          url: "/images/people.svg",
+          alt: "imagem de contato",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
         title={{
           text: <>Eu posso te ajudar!</>,
           as: "h2",
@@ -84,50 +93,61 @@ export default function Index() {
         }}
         description={{
           align: "center",
+          color: "light",
           text: (
             <>
               Os serviços são oferecidos a qualquer pessoa que sinta que poderá
-              se beneficiar deles, TODES SÃO BEM VINDES!
+              se beneficiar deles.
               <br />
-              Se encontre no seu guarda-roupas e simplifique a sua rotina
+              <br />
+              <strong>TODES SÃO BEM VINDES!</strong>
             </>
           ),
+        }}
+        cta={{
+          href: "/servicos",
+          text: "Conheça os serviços",
         }}
       />
 
       <TextMidia
-        bgColor="gray"
+        bgColor="primary"
+        title={{
+          text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
+          as: "h2",
+          color: "tertiary",
+          align: "center",
+        }}
+      />
+
+      <TextMidia
         img={{
-          url: "/images/inicio.jpg",
+          url: "/images/services.svg",
           alt: "imagem de uma caneca de café indicando o início da jornada",
           align: "left",
           props: {
-            // layout: "fill",
-            width: 1298,
-            height: 863,
+            width: 1000,
+            height: 800,
           },
         }}
         title={{
-          text: "Como funciona",
           as: "h2",
+          text: "Como funciona",
           color: "primary",
+          align: "center",
         }}
         description={{
+          align: "center",
           text: (
             <>
-              Visite a aba de serviços e encontre o que mais atende sua
-              necessidade atual
-              <br />
-              Caso fique em dúvida entre em contato comigo clicando aqui.
-              Podemos agendar uma conversa inicial sem compromisso para
-              avaliarmos juntos seu momento atual e qual a melhor forma de te
-              ajudar. Esta conversa inicial NÃO TEM CUSTO e nela vamos tirar
-              suas dúvidas e combinar os preços conforme o serviço escolhido.
-              <br />
-              Os serviços são oferecidos a qualquer pessoa que sinta que poderá
-              se beneficiar deles, TODES SÃO BEM VINDES!
+              AQUI VAMOS DESCREVER MELHOR COMO FUNCIONA E COMO O SERVIÇO É
+              REALIZADO
             </>
           ),
+        }}
+        cta={{
+          href: "/como-funciona",
+          text: "Saiba mais",
         }}
       />
     </Layout>
