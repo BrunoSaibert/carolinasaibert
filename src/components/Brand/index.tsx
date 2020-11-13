@@ -6,12 +6,19 @@ import * as S from "./styles";
 interface Props {
   href?: string;
   color?: string;
+  decorator?: boolean;
 }
 
-const Brand: React.FC<Props> = ({ href = "/", color = "primary" }) => {
+const Brand: React.FC<Props> = ({
+  href = "/",
+  color = "primary",
+  decorator = false,
+}) => {
   return (
     <Link prefetch href={href} passHref>
-      <S.StyledLink color={color}>Carolina Saibert</S.StyledLink>
+      <S.StyledLink color={color} decorator={decorator}>
+        Carolina Saibert
+      </S.StyledLink>
     </Link>
   );
 };

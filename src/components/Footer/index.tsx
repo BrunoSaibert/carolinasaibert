@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-// import Brand from "../Brand";
-// import { SocialList } from "../SocialList";
+import Brand from "../Brand";
+import Text from "../Text";
+import SocialList from "../SocialList";
 
 import config from "../../lib/config";
 
@@ -13,18 +14,18 @@ const Footer: React.FC = () => {
     <S.Container>
       <S.Row>
         <S.Col>
-          {/* <Brand /> */}
+          <Brand decorator />
 
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            voluptates laudantium sapiente placeat ut blanditiis, dolores nulla
-            quas veritatis! Aut dolore suscipit totam necessitatibus at non
-            quibusdam fugit ullam porro!
-          </p>
+          <Text color="light">
+            <strong>Psicóloga</strong> graduada pela{" "}
+            <strong>Universidade Positivo</strong>, com formação em{" "}
+            <strong>Consultoria de Estilo</strong> pela{" "}
+            <strong>Estilo Rio</strong>
+          </Text>
         </S.Col>
 
-        <S.Col>
-          {/* <SocialList /> */}
+        <S.Col separator>
+          <SocialList />
 
           <S.Nav>
             {config.pages.map(({ title, url }) => (
@@ -36,6 +37,12 @@ const Footer: React.FC = () => {
             ))}
           </S.Nav>
         </S.Col>
+      </S.Row>
+
+      <S.Row>
+        <Text as="h6" color="light" align="center">
+          &copy; 2020 - {config.copy}
+        </Text>
       </S.Row>
     </S.Container>
   );
