@@ -63,7 +63,7 @@ export default function Index() {
           ),
         }}
         cta={{
-          href: "/serviços",
+          href: "/servicos",
           text: "Ver serviços",
         }}
       />
