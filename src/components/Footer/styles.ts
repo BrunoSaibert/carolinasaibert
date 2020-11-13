@@ -2,8 +2,9 @@ import styled, { css } from "styled-components";
 
 import config from "../../lib/config";
 
-export const Container = styled.footer`
-  background-color: ${config.color.tertiary};
+export const Container = styled.footer<{ copy?: boolean }>`
+  background-color: ${(props) =>
+    props.copy ? config.color.secondary : config.color.tertiary};
   padding: 1.25em 0;
 `;
 

@@ -31,5 +31,12 @@ export const Container = styled.section<{
   @media (max-width: 769px) {
     margin-top: 70px;
     min-height: calc(100vh - 70px);
+
+    background: url(${(props) => props.urlImg}); /* fallback */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(${(props) => props.urlImg.replace(".jpg", "-mob.jpg")}) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 `;

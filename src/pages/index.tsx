@@ -63,12 +63,6 @@ export default function Index() {
               <li>Não se sente bem com seus acessórios</li>
               <li>Acha que não tem estilo</li>
               <li>Sente que suas roupas não te representam</li>
-              <li>Quer saber as cores que mais te valorizam</li>
-              <li>Quer experienciar uma outra forma de se mostrar ao mundo</li>
-              <li>
-                Quer se ver de uma forma diferente, tendo sua essência e valores
-                respeitados
-              </li>
             </>
           ),
         }}
