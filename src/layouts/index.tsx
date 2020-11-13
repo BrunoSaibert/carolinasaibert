@@ -11,7 +11,7 @@ import BasicMeta from "../components/meta/BasicMeta";
 import JsonLdMeta from "../components/meta/JsonLdMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
-import { SocialList } from "../components/SocialList";
+import SocialList from "../components/SocialList";
 import TagButton from "../components/TagButton";
 
 import { getAuthor } from "../lib/authors";
