@@ -134,8 +134,8 @@ export default function Index() {
           align: "center",
           text: (
             <>
-              AQUI VAMOS DESCREVER MELHOR COMO FUNCIONA E COMO O SERVIÇO É
-              REALIZADO
+              São realizados encontros para te conhecer melhor, em seguida vamos
+              à prática.
             </>
           ),
         }}
