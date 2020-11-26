@@ -30,7 +30,7 @@ export default function Index() {
           as: "p",
           color: "light",
           align: "center",
-          text: "Conheça o nosso médoto",
+          text: "conheça o nosso médoto",
         }}
       />
 

@@ -12,6 +12,7 @@ type Config = {
   readonly twitter_account: string;
   readonly instagram_account: string;
   readonly linkedin_account: string;
+  readonly pinterest_account: string;
   readonly mail_account: string;
   readonly phone_number: string;
   readonly pages: {

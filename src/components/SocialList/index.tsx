@@ -1,6 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaPinterest,
+  FaWhatsapp,
+  FaEnvelope,
+} from "react-icons/fa";
 
 import config from "../../lib/config";
 
@@ -12,6 +17,12 @@ const SocialList: React.FC = () => {
       <Link href={`https://www.instagram.com/${config.instagram_account}`}>
         <a title="Instagram" target="_blank" rel="noopener">
           <FaInstagram size={30} />
+        </a>
+      </Link>
+
+      <Link href={`https://br.pinterest.com/${config.pinterest_account}`}>
+        <a title="Instagram" target="_blank" rel="noopener">
+          <FaPinterest size={30} />
         </a>
       </Link>
 
