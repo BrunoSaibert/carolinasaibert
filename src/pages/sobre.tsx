@@ -14,8 +14,7 @@ export default function Index() {
       <TwitterCardMeta url={"/sobre"} />
 
       <Hero
-        size="md"
-        urlImg="/images/sobre.jpg"
+        size="sm"
         title={{
           as: "h1",
           color: "light",
@@ -136,9 +135,17 @@ export default function Index() {
       <TextMidia
         bgColor="primary"
         title={{
-          text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
-          as: "h2",
-          color: "tertiary",
+          text: (
+            <>
+              <p>
+                “Sinto-me mais feliz simplesmente por ser eu mesmo e deixar os
+                outros serem eles mesmos”
+              </p>
+              <cite>Carl Rogers</cite>
+            </>
+          ),
+          as: "blockquote",
+          color: "light",
           align: "center",
         }}
       />

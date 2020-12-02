@@ -6,6 +6,8 @@ import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
 import Hero from "../../components/Hero";
 import TextMidia from "../../components/TextMidia";
 
+import QuemPodeContratar from "../../containers/QuemPodeContratar";
+
 export default function Index() {
   return (
     <Layout>
@@ -18,8 +20,7 @@ export default function Index() {
       />
 
       <Hero
-        size="md"
-        urlImg="/images/sobre.jpg"
+        size="sm"
         title={{
           as: "h1",
           color: "light",
@@ -31,7 +32,7 @@ export default function Index() {
           as: "p",
           color: "light",
           align: "center",
-          text: "Não é terapia. Também não é só uma consultoria de estilo",
+          text: "não é só uma consultoria de estilo",
         }}
       />
 
@@ -105,7 +106,7 @@ export default function Index() {
         description={{
           align: "center",
           text:
-            "5 encontros de autoconhecimento e acolhimento da história de vida: Aqui vamos te conhecer melhor!",
+            "Vamos te conhecer melhor em 5 encontros de autoconhecimento e acolhimento da história de vida.",
         }}
       />
 
@@ -130,17 +131,7 @@ export default function Index() {
           color: "light",
           align: "center",
           text:
-            "6 encontros de análises, guarda roupas e personal shopper: Aqui vamos para a prática!",
-        }}
-      />
-
-      <TextMidia
-        bgColor="primary"
-        title={{
-          text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
-          as: "h2",
-          color: "tertiary",
-          align: "center",
+            "Os 6 encontros seguintes são para análises de tipo físico, coloração pessoal, guarda roupas e personal shopper.",
         }}
       />
 
@@ -162,8 +153,14 @@ export default function Index() {
         }}
         description={{
           align: "center",
-          text:
-            "2 encontros para transformação no salão e aula de automaquiagem: Etapa contratadas à parte",
+          text: (
+            <>
+              Como complemento, há a opção de realizar 2 encontros para
+              transformação no salão e aula de automaquiagem.
+              <br />
+              <small>* Etapas contratadas à parte</small>
+            </>
+          ),
         }}
       />
 
@@ -187,44 +184,28 @@ export default function Index() {
         description={{
           color: "light",
           align: "center",
-          text:
-            "2 encontros para encerramento, entrega de lookbook e retorno após 30 dias: Aqui vamos avaliar os resultados!",
+          text: (
+            <>
+              O encerramento acontece em 2 encontros:
+              <br />o primeiro para a entrega de material digital com o
+              resultado da consultoria e retorno após 30 dias para avaliar os
+              resultados!
+            </>
+          ),
         }}
       />
 
       <TextMidia
-        img={{
-          url: "/images/people.svg",
-          alt: "imagem de contato",
-          align: "right",
-          props: {
-            width: 1000,
-            height: 800,
-          },
-        }}
+        bgColor="primary"
         title={{
+          text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
           as: "h2",
-          text: "Quem pode contratar?",
-          color: "primary",
+          color: "tertiary",
           align: "center",
-        }}
-        description={{
-          align: "center",
-          text: (
-            <>
-              Os serviços são oferecidos a qualquer pessoa que sinta que poderá
-              se beneficiar deles.
-              <br />
-              <br />
-              <strong>TODES SÃO BEM VINDES!</strong>
-            </>
-          ),
-        }}
-        cta={{
-          href: "/contato",
-          text: "Entrar em contato",
         }}
       />
+
+      <QuemPodeContratar />
     </Layout>
   );
 }

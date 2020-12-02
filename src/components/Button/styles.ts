@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import config from "../../lib/config";
 
-export const Container = styled.a`
+export const Container = styled.a<{ variant?: string }>`
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -20,7 +20,14 @@ export const Container = styled.a`
   );
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  color: #ffffff;
+  color: ${config.color.light};
+
+  ${(props) =>
+    props.variant === "light" &&
+    css`
+      background: ${config.color.light};
+      color: ${config.color.primary};
+    `}
 
   font-size: 1.125rem;
   font-weight: bold;

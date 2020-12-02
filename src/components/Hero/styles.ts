@@ -1,9 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+import config from "../../lib/config";
 
 const sizes = { sm: "20vh", md: "40vh", lg: "60vh" };
 
 export const Container = styled.section<{
-  urlImg: string;
+  bgColor?: string;
+  urlImg?: string;
   size: "sm" | "md" | "lg";
 }>`
   display: flex;
@@ -16,10 +19,15 @@ export const Container = styled.section<{
   height: auto;
   padding: 1.5rem;
 
-  background: #333;
-  background: url(${(props) => props.urlImg}); /* fallback */
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(${(props) => props.urlImg}) no-repeat;
+  background: ${(props) =>
+    props.bgColor ? config.color[props.bgColor] : config.color.primaryDark};
+  ${(props) =>
+    props.urlImg &&
+    css`
+      background: url(${props.urlImg}); /* fallback */
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(${props.urlImg}) no-repeat;
+    `};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -30,11 +38,22 @@ export const Container = styled.section<{
 
   @media (max-width: 769px) {
     margin-top: 70px;
-    min-height: calc(100vh - 70px);
+    padding: 2.5rem 1.5rem;
 
-    background: url(${(props) => props.urlImg}); /* fallback */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(${(props) => props.urlImg.replace(".jpg", "-mob.jpg")}) no-repeat;
+    ${(props) =>
+      props.size === "lg" &&
+      css`
+        min-height: calc(100vh - 70px);
+      `}
+
+    ${(props) =>
+      props.urlImg &&
+      css`
+        background: url(${props.urlImg}); /* fallback */
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url(${props.urlImg.replace(".jpg", "-mob.jpg")}) no-repeat;
+      `};
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

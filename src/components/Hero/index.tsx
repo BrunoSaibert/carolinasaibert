@@ -6,16 +6,24 @@ import Button, { ButtonProps } from "../Button";
 import * as S from "./styles";
 
 interface Props {
-  urlImg: string;
+  bgColor?: string;
+  urlImg?: string;
   size: "sm" | "md" | "lg";
   title?: TextProps;
   description?: TextProps;
   cta?: ButtonProps;
 }
 
-const Hero: React.FC<Props> = ({ urlImg, size, title, description, cta }) => {
+const Hero: React.FC<Props> = ({
+  bgColor,
+  urlImg,
+  size,
+  title,
+  description,
+  cta,
+}) => {
   return (
-    <S.Container urlImg={urlImg} size={size}>
+    <S.Container bgColor={bgColor} urlImg={urlImg} size={size}>
       <div>
         {title && (
           <Text

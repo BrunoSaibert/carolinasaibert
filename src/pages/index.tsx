@@ -17,7 +17,6 @@ export default function Index() {
 
       <Hero
         size="lg"
-        urlImg="/images/intro.jpg"
         title={{
           as: "h1",
           color: "light",
@@ -38,10 +37,6 @@ export default function Index() {
               <cite>Carl Rogers</cite>
             </>
           ),
-        }}
-        cta={{
-          href: "/servicos",
-          text: "Saiba mais",
         }}
       />
 
@@ -97,12 +92,8 @@ export default function Index() {
         description={{
           align: "center",
           color: "light",
-          text: (
-            <>
-              São realizados encontros para te conhecer melhor, em seguida vamos
-              à prática.
-            </>
-          ),
+          text:
+            "Agende um horário sem compromisso para tirar suas dúvidas e entenda melhor como posso te ajudar.",
         }}
         cta={{
           href: "/como-funciona",

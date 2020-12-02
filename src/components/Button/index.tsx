@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   if (href) {
     return (
       <Link href={href}>
-        <S.Container as="a" {...props}>
+        <S.Container as="a" variant={variant} {...props}>
           {children || text}
         </S.Container>
       </Link>

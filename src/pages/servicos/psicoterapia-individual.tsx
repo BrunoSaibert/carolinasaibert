@@ -16,8 +16,7 @@ export default function Index() {
       <TwitterCardMeta url={"/servicos/psicoterapia-individual"} />
 
       <Hero
-        size="md"
-        urlImg="/images/sobre.jpg"
+        size="sm"
         title={{
           as: "h1",
           color: "light",
@@ -29,7 +28,7 @@ export default function Index() {
           as: "p",
           color: "light",
           align: "center",
-          text: "conheça todos os nossos serviços",
+          text: "conheça o acompanhamento psicológico",
         }}
       />
 
@@ -43,15 +42,77 @@ export default function Index() {
             height: 800,
           },
         }}
+        title={{
+          as: "h2",
+          color: "primary",
+          align: "center",
+          text: "Atendimento psicológico",
+        }}
         description={{
           align: "center",
           text:
-            "Realizo psicoterapia individual com pessoas maiores de 18 anos através da Abordagem Centrada na Pessoa. Os atendimentos são para TODES, livres de qualquer tipo de preconceito ou julgamentos morais quanto à sexualidade, identidade de gênero ou qualquer outra característica do cliente. Além disso a prática psicológica prevê sigilo sobre todas as informações compartilhadas durante o atendimento. Os atendimentos tem duração de 50 minutos e podem ser presenciais ou online. Atendo demandas gerais e para saber se posso te ajudar com suas questões marcamos um primeiro atendimento (gratuito), nos conhecemos melhor, você me conta o que te fez me procurar, te explico como a psicoterapia funciona (horários, minha forma de trabalho e outras possíveis dúvidas que você tenha) e, no final, você decide se deseja dar continuidade ao acompanhamento.",
+            "Realizo psicoterapia individual com pessoas maiores de 18 anos através da Abordagem Centrada na Pessoa.",
         }}
-        // cta={{
-        //   href: "/servicos/psicoterapia-individual",
-        //   text: "Saiba mais",
-        // }}
+        cta={{
+          href: "/contato",
+          text: "Contrate agora",
+        }}
+      />
+
+      <TextMidia
+        bgColor="tertiary"
+        img={{
+          url: "/images/security.svg",
+          alt: "",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        description={{
+          align: "center",
+          color: "light",
+          text:
+            "Os atendimentos são para TODES, livres de qualquer tipo de preconceito ou julgamentos morais quanto à sexualidade, identidade de gênero ou qualquer outra característica pessoal. Além disso a prática psicológica prevê sigilo sobre todas as informações compartilhadas durante o atendimento.",
+        }}
+      />
+
+      <TextMidia
+        img={{
+          url: "/images/time.svg",
+          alt: "",
+          align: "left",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        description={{
+          align: "center",
+          text: (
+            <>
+              Os atendimentos tem duração de <strong>50 minutos</strong> e podem
+              ser presenciais ou online. Atendo demandas gerais e para saber se
+              posso te ajudar com suas questões marcamos um primeiro{" "}
+              <strong>atendimento (gratuito)</strong>, nos conhecemos melhor,
+              você me conta o que te fez me procurar, te explico como a
+              psicoterapia funciona (horários, minha forma de trabalho e outras
+              possíveis dúvidas que você tenha) e, no final, você decide se
+              deseja dar continuidade ao acompanhamento.
+            </>
+          ),
+        }}
+      />
+
+      <TextMidia
+        bgColor="primary"
+        title={{
+          text: "Se conecte à sua essência e seja livre para ser você mesmo.",
+          as: "h2",
+          color: "tertiary",
+          align: "center",
+        }}
       />
 
       <QuemPodeContratar />

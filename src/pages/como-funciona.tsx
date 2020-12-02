@@ -18,8 +18,7 @@ export default function Index() {
       <TwitterCardMeta url={"/como-funciona"} />
 
       <Hero
-        size="md"
-        urlImg="/images/como_funciona.jpg"
+        size="sm"
         title={{
           as: "h1",
           color: "light",
@@ -31,7 +30,7 @@ export default function Index() {
           as: "p",
           color: "light",
           align: "center",
-          text: "conheça o nosso médoto",
+          text: "entenda como posso te ajudar",
         }}
       />
 
@@ -55,17 +54,70 @@ export default function Index() {
           align: "center",
           text: (
             <>
-              Visite a aba de{" "}
-              <Link href="/servicos">
-                <a>serviços</a>
-              </Link>{" "}
-              e encontre o que mais atende sua necessidade atual
+              Visite a aba de serviços e encontre o que mais atende sua
+              necessidade atual.
             </>
           ),
         }}
         cta={{
           href: "/servicos",
           text: "Ver serviços",
+        }}
+      />
+
+      <TextMidia
+        bgColor="tertiary"
+        img={{
+          url: "/images/conversation2.svg",
+          alt: "imagem de contato",
+          align: "left",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        title={{
+          as: "h2",
+          text: "O atendimento",
+          color: "primary",
+          align: "center",
+        }}
+        description={{
+          align: "center",
+          color: "light",
+          text: (
+            <>
+              Cada serviço é construido em conjunto com você, para atingir o
+              melhor resultado.
+            </>
+          ),
+        }}
+      />
+
+      <TextMidia
+        img={{
+          url: "/images/key_points.svg",
+          alt: "imagem de contato",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        title={{
+          as: "h2",
+          text: "O objetivo",
+          color: "primary",
+          align: "center",
+        }}
+        description={{
+          align: "center",
+          text: (
+            <>
+              Vamos juntos desenvolver seu potencial, para que você seja sua
+              melhor versão.
+            </>
+          ),
         }}
       />
 

@@ -16,8 +16,7 @@ export default function Index() {
       <TwitterCardMeta url={"/servicos"} />
 
       <Hero
-        size="md"
-        urlImg="/images/sobre.jpg"
+        size="sm"
         title={{
           as: "h1",
           color: "light",
@@ -51,7 +50,7 @@ export default function Index() {
         }}
         description={{
           align: "center",
-          text: "Psicoterapia individual online ou presencial",
+          text: "Atendimento psicológico individual online ou presencial",
         }}
         cta={{
           href: "/servicos/psicoterapia-individual",

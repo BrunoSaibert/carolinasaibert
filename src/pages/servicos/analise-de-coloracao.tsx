@@ -16,8 +16,7 @@ export default function Index() {
       <TwitterCardMeta url={"/servicos/analise-de-coloracao"} />
 
       <Hero
-        size="md"
-        urlImg="/images/sobre.jpg"
+        size="sm"
         title={{
           as: "h1",
           color: "light",
@@ -43,10 +42,85 @@ export default function Index() {
             height: 800,
           },
         }}
+        title={{
+          as: "h2",
+          color: "primary",
+          align: "center",
+          text: "Sabia que as cores podem ser usadas a seu favor?",
+        }}
         description={{
           align: "center",
           text:
-            "Sabia que as cores podem ser usadas a seu favor? Com a análise de coloração pessoal você descobre as cores que mais harmonizam com a sua beleza natural, as cores que mais te valorizam. Com esse conhecimento você poderá criar combinações que ao mesmo tempo atendam suas preferências e harmonizem com sua aparência e seu estilo! Para isso eu irei analisar suas características pessoais, como subtom de pele, intensidade, profundidade e contraste. À partir da análise destas características, utilizando o método sazonal expandido, é possível dizer em qual das chamadas “estações” você se encontra e, consequentemente, qual a sua paleta de cores.",
+            "Com a análise de coloração pessoal você descobre as cores que mais harmonizam com a sua beleza natural, as cores que mais te valorizam.",
+        }}
+        cta={{
+          href: "/contaro",
+          text: "Contrate agora",
+        }}
+      />
+
+      <TextMidia
+        bgColor="tertiary"
+        img={{
+          url: "/images/art_thinking.svg",
+          alt: "",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        description={{
+          align: "center",
+          color: "light",
+          text:
+            "Com esse conhecimento você poderá criar combinações que ao mesmo tempo atendam suas preferências e harmonizem com sua aparência e seu estilo!",
+        }}
+      />
+
+      <TextMidia
+        img={{
+          url: "/images/color.svg",
+          alt: "",
+          align: "left",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        description={{
+          align: "center",
+          text:
+            "Para isso eu irei analisar suas características pessoais, como subtom de pele, intensidade, profundidade e contraste. ",
+        }}
+      />
+
+      <TextMidia
+        bgColor="tertiary"
+        img={{
+          url: "/images/specs.svg",
+          alt: "",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        description={{
+          align: "center",
+          color: "light",
+          text:
+            "À partir da análise destas características, utilizando o método sazonal expandido, é possível dizer em qual das chamadas “estações” você se encontra e, consequentemente, qual a sua paleta de cores.",
+        }}
+      />
+
+      <TextMidia
+        bgColor="primary"
+        title={{
+          text: "Descubra suas cores e valorize sua beleza.",
+          as: "h2",
+          color: "tertiary",
+          align: "center",
         }}
       />
 
