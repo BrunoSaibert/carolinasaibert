@@ -6,8 +6,9 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 
 import Hero from "../components/Hero";
-import Text from "../components/Text";
 import TextMidia from "../components/TextMidia";
+
+import QuemPodeContratar from "../containers/QuemPodeContratar";
 
 export default function Index() {
   return (
@@ -107,39 +108,7 @@ export default function Index() {
         }}
       />
 
-      <TextMidia
-        img={{
-          url: "/images/people.svg",
-          alt: "imagem de contato",
-          align: "right",
-          props: {
-            width: 1000,
-            height: 800,
-          },
-        }}
-        title={{
-          as: "h2",
-          text: "Quem pode contratar?",
-          color: "primary",
-          align: "center",
-        }}
-        description={{
-          align: "center",
-          text: (
-            <>
-              Os serviços são oferecidos a qualquer pessoa que sinta que poderá
-              se beneficiar deles.
-              <br />
-              <br />
-              <strong>TODES SÃO BEM VINDES!</strong>
-            </>
-          ),
-        }}
-        cta={{
-          href: "/contato",
-          text: "Entrar em contato",
-        }}
-      />
+      <QuemPodeContratar />
     </Layout>
   );
 }

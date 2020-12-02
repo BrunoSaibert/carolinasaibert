@@ -6,6 +6,8 @@ import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import Hero from "../components/Hero";
 import TextMidia from "../components/TextMidia";
 
+import QuemPodeContratar from "../containers/QuemPodeContratar";
+
 export default function Index() {
   return (
     <Layout>
@@ -38,41 +40,16 @@ export default function Index() {
           ),
         }}
         cta={{
-          href: "/servicos",
+          href: "#servicos",
           text: "Saiba mais",
         }}
       />
 
       <TextMidia
+        id="servicos"
         img={{
-          url: "/images/clothes.svg",
-          alt: "imagem de um guarda roupas",
-          align: "left",
-          props: {
-            width: 1000,
-            height: 800,
-          },
-        }}
-        title={{ text: "Se você:", as: "h2", color: "primary" }}
-        description={{
-          as: "ul",
-          text: (
-            <>
-              <li>Nunca tem o que vestir (mesmo tendo várias roupas)</li>
-              <li>Tem dificuldade em montar looks</li>
-              <li>Não se sente bem com seus acessórios</li>
-              <li>Acha que não tem estilo</li>
-              <li>Sente que suas roupas não te representam</li>
-            </>
-          ),
-        }}
-      />
-
-      <TextMidia
-        bgColor="tertiary"
-        img={{
-          url: "/images/people.svg",
-          alt: "imagem de contato",
+          url: "/images/thought.svg",
+          alt: "",
           align: "right",
           props: {
             width: 1000,
@@ -80,44 +57,32 @@ export default function Index() {
           },
         }}
         title={{
-          text: <>Eu posso te ajudar!</>,
+          text: "Conheça nossos Serviços:",
           as: "h2",
           color: "primary",
           align: "center",
         }}
         description={{
           align: "center",
-          color: "light",
           text: (
             <>
-              Os serviços são oferecidos a qualquer pessoa que sinta que poderá
-              se beneficiar deles.
+              Nossos serviços foram pensados especialmente para você.
               <br />
-              <br />
-              <strong>TODES SÃO BEM VINDES!</strong>
+              Encontre o que mais atende sua necessidade atual.
             </>
           ),
         }}
         cta={{
           href: "/servicos",
-          text: "Conheça os serviços",
+          text: "Saiba mais",
         }}
       />
 
       <TextMidia
-        bgColor="primary"
-        title={{
-          text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
-          as: "h2",
-          color: "tertiary",
-          align: "center",
-        }}
-      />
-
-      <TextMidia
+        bgColor="tertiary"
         img={{
           url: "/images/services.svg",
-          alt: "imagem de uma caneca de café indicando o início da jornada",
+          alt: "",
           align: "left",
           props: {
             width: 1000,
@@ -132,6 +97,7 @@ export default function Index() {
         }}
         description={{
           align: "center",
+          color: "light",
           text: (
             <>
               São realizados encontros para te conhecer melhor, em seguida vamos
@@ -144,6 +110,8 @@ export default function Index() {
           text: "Saiba mais",
         }}
       />
+
+      <QuemPodeContratar />
     </Layout>
   );
 }

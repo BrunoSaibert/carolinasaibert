@@ -102,13 +102,44 @@ export default function Index() {
             <>
               Integro meus conhecimentos em um método único, desenvolvido por
               mim, para trabalhar com cada cliente de forma a desenvolver seu
-              autoconhecimento, autenticidade e autonomia. Acredito que ao se
-              sentir segura e tendo o vestir como uma ferramenta a seu dispor (e
-              não o contrário) é possível ter uma vida mais leve, com espaço
-              para outras prioridades que não a perseguição de uma imagem
-              “perfeita” e inalcançável.
+              autoconhecimento, autenticidade e autonomia.
             </>
           ),
+        }}
+      />
+
+      <TextMidia
+        bgColor="tertiary"
+        img={{
+          url: "/images/thanks.svg",
+          alt: "imagem de contato",
+          align: "right",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        description={{
+          align: "center",
+          color: "light",
+          text: (
+            <>
+              Acredito que ao se sentir segura e tendo o vestir como uma
+              ferramenta a seu dispor (e não o contrário) é possível ter uma
+              vida mais leve, com espaço para outras prioridades que não a
+              perseguição de uma imagem “perfeita” e inalcançável.
+            </>
+          ),
+        }}
+      />
+
+      <TextMidia
+        bgColor="primary"
+        title={{
+          text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
+          as: "h2",
+          color: "tertiary",
+          align: "center",
         }}
       />
     </Layout>

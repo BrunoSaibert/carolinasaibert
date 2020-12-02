@@ -1,17 +1,21 @@
-import Layout from "../components/Layout";
-import BasicMeta from "../components/meta/BasicMeta";
-import OpenGraphMeta from "../components/meta/OpenGraphMeta";
-import TwitterCardMeta from "../components/meta/TwitterCardMeta";
+import Layout from "../../components/Layout";
+import BasicMeta from "../../components/meta/BasicMeta";
+import OpenGraphMeta from "../../components/meta/OpenGraphMeta";
+import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
 
-import Hero from "../components/Hero";
-import TextMidia from "../components/TextMidia";
+import Hero from "../../components/Hero";
+import TextMidia from "../../components/TextMidia";
 
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/servicos"} />
-      <OpenGraphMeta url={"/servicos"} />
-      <TwitterCardMeta url={"/servicos"} />
+      <BasicMeta url={"/servicos/consultoria-completa-em-psicologia-da-moda"} />
+      <OpenGraphMeta
+        url={"/servicos/consultoria-completa-em-psicologia-da-moda"}
+      />
+      <TwitterCardMeta
+        url={"/servicos/consultoria-completa-em-psicologia-da-moda"}
+      />
 
       <Hero
         size="md"
@@ -20,15 +24,65 @@ export default function Index() {
           as: "h1",
           color: "light",
           align: "center",
-          text: "Serviços",
+          text: "Consultoria Completa em Psicologia da Moda",
           decorator: true,
         }}
         description={{
           as: "p",
           color: "light",
           align: "center",
+          text: "Não é terapia. Também não é só uma consultoria de estilo",
+        }}
+      />
+
+      <TextMidia
+        img={{
+          url: "/images/clothes.svg",
+          alt: "",
+          align: "left",
+          props: {
+            width: 1000,
+            height: 800,
+          },
+        }}
+        title={{ text: "Se você:", as: "h2", color: "primary" }}
+        description={{
+          as: "ul",
+          text: (
+            <>
+              <li>Nunca tem o que vestir (mesmo tendo várias roupas)</li>
+              <li>Tem dificuldade em montar looks</li>
+              <li>Não se sente bem com seus acessórios</li>
+              <li>Acha que não tem estilo</li>
+              <li>Sente que suas roupas não te representam</li>
+            </>
+          ),
+        }}
+      />
+
+      <TextMidia
+        bgColor="tertiary"
+        title={{
+          text: "Eu posso te ajudar",
+          as: "h2",
+          color: "primary",
+          align: "center",
+        }}
+        description={{
+          color: "light",
+          align: "center",
           text:
-            "a consultoria em psicologia da moda acontece da seguinte forma",
+            "Com a Consultoria Completa em Psicologia da Moda você tem a oportunidade de se conhecer melhor, se reconectar com a sua essência e assim promover a mudança de imagem pessoal que deseja, acompanhando o desenvolvimento interno adquirido.",
+        }}
+      />
+
+      <TextMidia
+        title={{
+          text:
+            "Conheça as etapas da Consultoria Completa em Psicologia da Moda:",
+          as: "h2",
+          color: "primary",
+          align: "center",
         }}
       />
 
@@ -44,19 +98,12 @@ export default function Index() {
         }}
         title={{
           text: "Etapa 1 - Autoconhecimento",
-          as: "h2",
+          as: "h3",
           color: "primary",
           align: "center",
         }}
         description={{
           align: "center",
-          // text: (
-          //   <>
-          //     <p>Vamos te conhecer melhor</p>
-          //     <br />
-          //     <strong>TODES SÃO BEM VINDES!</strong>
-          //   </>
-          // ),
           text:
             "5 encontros de autoconhecimento e acolhimento da história de vida: Aqui vamos te conhecer melhor!",
         }}
@@ -75,7 +122,7 @@ export default function Index() {
         }}
         title={{
           text: "Etapa 2 - Prática",
-          as: "h2",
+          as: "h3",
           align: "center",
           color: "primary",
         }}
@@ -84,6 +131,16 @@ export default function Index() {
           align: "center",
           text:
             "6 encontros de análises, guarda roupas e personal shopper: Aqui vamos para a prática!",
+        }}
+      />
+
+      <TextMidia
+        bgColor="primary"
+        title={{
+          text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
+          as: "h2",
+          color: "tertiary",
+          align: "center",
         }}
       />
 
@@ -99,7 +156,7 @@ export default function Index() {
         }}
         title={{
           text: "Etapa 3 - Transformação",
-          as: "h2",
+          as: "h3",
           align: "center",
           color: "primary",
         }}
@@ -123,7 +180,7 @@ export default function Index() {
         }}
         title={{
           text: "Etapa 4 - Encerramento",
-          as: "h2",
+          as: "h3",
           align: "center",
           color: "primary",
         }}

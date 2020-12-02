@@ -18,8 +18,8 @@ export const Container = styled.section<{ bgColor?: string; full?: boolean }>`
     `}
 `;
 
-export const Content = styled.div`
-  max-width: 1200px;
+export const Content = styled.div<{ hasImage?: boolean }>`
+  max-width: ${(props) => (props.hasImage ? 1200 : 900)}px;
   margin: 0 auto;
   padding: 0 1.5em;
 

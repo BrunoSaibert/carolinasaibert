@@ -9,6 +9,10 @@ export default createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   html, body, #root {
     min-height: 100%;
@@ -53,6 +57,11 @@ export default createGlobalStyle`
   h2 {
     font-size: 2.25rem;
     line-height: 2.75rem;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
     font-weight: 400;
   }
 

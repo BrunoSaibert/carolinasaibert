@@ -29,10 +29,11 @@ const TextMidia: React.FC<Props> = ({
   img,
   cta,
   full,
+  ...props
 }) => {
   return (
-    <S.Container bgColor={bgColor} full={full}>
-      <S.Content>
+    <S.Container bgColor={bgColor} full={full} {...props}>
+      <S.Content hasImage={!!img}>
         {img && (
           <S.ImageWarper imgAling={img.align}>
             <Image src={img.url} alt={img.alt} {...img.props} />
