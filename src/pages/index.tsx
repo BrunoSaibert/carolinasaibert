@@ -40,13 +40,12 @@ export default function Index() {
           ),
         }}
         cta={{
-          href: "#servicos",
+          href: "/servicos",
           text: "Saiba mais",
         }}
       />
 
       <TextMidia
-        id="servicos"
         img={{
           url: "/images/thought.svg",
           alt: "",
