@@ -33,6 +33,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/personal.svg",
           alt: "",
@@ -93,6 +94,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/clothes.svg",
           alt: "",

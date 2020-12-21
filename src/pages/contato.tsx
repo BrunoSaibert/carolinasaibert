@@ -53,6 +53,7 @@ export default function Index() {
       <TwitterCardMeta url={"/contato"} />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/contact.svg",
           alt: "Imagem de contato",

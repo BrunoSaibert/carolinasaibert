@@ -3,7 +3,7 @@ import TextMidia from "../components/TextMidia";
 const QuemPodeContratar: React.FC<{ white?: boolean }> = ({ white = true }) => {
   return (
     <TextMidia
-      bgColor={white ? "light" : "tertiary"}
+      bgColor={white ? "gray" : "tertiary"}
       img={{
         url: "/images/people.svg",
         alt: "imagem de contato",

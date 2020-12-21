@@ -37,6 +37,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/clothes.svg",
           alt: "",
@@ -78,6 +79,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         title={{
           text:
             "Conheça as etapas da Consultoria Completa em Psicologia da Moda:",
@@ -88,6 +90,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/key_points2.svg",
           alt: "",
@@ -136,6 +139,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/makeup.svg",
           alt: "",

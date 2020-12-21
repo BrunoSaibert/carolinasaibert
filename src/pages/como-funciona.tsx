@@ -35,6 +35,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/tour.svg",
           alt: "imagem de contato",
@@ -95,6 +96,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/key_points.svg",
           alt: "imagem de contato",

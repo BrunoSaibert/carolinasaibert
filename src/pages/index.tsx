@@ -41,6 +41,7 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/thought.svg",
           alt: "",
