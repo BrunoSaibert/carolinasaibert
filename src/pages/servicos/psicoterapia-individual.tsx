@@ -36,7 +36,8 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/personal.svg",
-          alt: "",
+          alt:
+            "Ilustação de moça segurando uma placa no formato de balão de conversas",
           align: "left",
           props: {
             width: 1000,
@@ -64,7 +65,8 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/security.svg",
-          alt: "",
+          alt:
+            "Ilustração de um segurança e um cadeado em frente de uma página da internet",
           align: "right",
           props: {
             width: 1000,
@@ -83,7 +85,8 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/time.svg",
-          alt: "",
+          alt:
+            "Ilustração de uma mulher sentada em um dos ponteiros de um grande relógio",
           align: "left",
           props: {
             width: 1000,
@@ -112,7 +115,7 @@ export default function Index() {
         title={{
           text: "Se conecte à sua essência e seja livre para ser você mesmo.",
           as: "h2",
-          color: "tertiary",
+          color: "gray",
           align: "center",
         }}
       />

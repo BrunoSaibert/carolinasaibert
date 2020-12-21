@@ -34,8 +34,9 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/carol.jpg",
-          alt: "imagem de contato",
+          alt: "Psicóloga Carol Saibert",
           align: "left",
+          glow: true,
           props: {
             width: 800,
             height: 800,
@@ -65,7 +66,8 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/friend.svg",
-          alt: "imagem de contato",
+          alt:
+            "Ilustação de três moças conversando e comendo pizza entquanto conversam",
           align: "right",
           props: {
             width: 1000,
@@ -90,7 +92,7 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/knowledge.svg",
-          alt: "imagem de contato",
+          alt: "Ilustação de moça admirando informações em um quadro",
           align: "left",
           props: {
             width: 1000,
@@ -113,7 +115,7 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/thanks.svg",
-          alt: "imagem de contato",
+          alt: "Ilustação de moça comemorando com vários corações ao seu redor",
           align: "right",
           props: {
             width: 1000,

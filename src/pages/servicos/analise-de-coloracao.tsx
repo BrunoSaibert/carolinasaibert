@@ -36,7 +36,7 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/palette.svg",
-          alt: "",
+          alt: "Ilustração de mulher pensativa com vários circulos de cores",
           align: "left",
           props: {
             width: 1000,
@@ -64,7 +64,7 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/art_thinking.svg",
-          alt: "",
+          alt: "Ilustração de uma mulher desfilando",
           align: "right",
           props: {
             width: 1000,
@@ -83,7 +83,7 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/color.svg",
-          alt: "",
+          alt: "Ilustração de uma moça observando uma paleta de cores",
           align: "left",
           props: {
             width: 1000,
@@ -101,7 +101,8 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/specs.svg",
-          alt: "",
+          alt:
+            "Ilustração de várias paletas de cores acima de folhas de um caderno",
           align: "right",
           props: {
             width: 1000,
@@ -121,7 +122,7 @@ export default function Index() {
         title={{
           text: "Descubra suas cores e valorize sua beleza.",
           as: "h2",
-          color: "tertiary",
+          color: "gray",
           align: "center",
         }}
       />

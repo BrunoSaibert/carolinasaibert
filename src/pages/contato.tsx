@@ -56,7 +56,7 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/contact.svg",
-          alt: "Imagem de contato",
+          alt: "Listração de pessoas próximas à ícones de contato",
           align: "left",
           props: {
             width: 1000,

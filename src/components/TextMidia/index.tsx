@@ -11,6 +11,7 @@ interface ImageProps {
   alt: string;
   align?: "left" | "right";
   props: any;
+  glow?: boolean;
 }
 
 interface Props {
@@ -35,7 +36,7 @@ const TextMidia: React.FC<Props> = ({
     <S.Container bgColor={bgColor} full={full} {...props}>
       <S.Content hasImage={!!img}>
         {img && (
-          <S.ImageWarper imgAling={img.align}>
+          <S.ImageWarper imgAling={img.align} imgGlow={img.glow}>
             <Image src={img.url} alt={img.alt} {...img.props} />
           </S.ImageWarper>
         )}

@@ -17,6 +17,7 @@ export default function Index() {
 
       <Hero
         size="lg"
+        urlImg="/images/cover.jpg"
         title={{
           as: "h1",
           color: "light",
@@ -44,7 +45,7 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/thought.svg",
-          alt: "",
+          alt: "Ilustração de moça pensativa",
           align: "right",
           props: {
             width: 1000,
@@ -77,7 +78,7 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/services.svg",
-          alt: "",
+          alt: "Ilustração de moça mostrando mais informações",
           align: "left",
           props: {
             width: 1000,

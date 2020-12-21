@@ -5,11 +5,11 @@ import config from "../../lib/config";
 export const Container = styled.div`
   display: block;
   background-color: ${config.color.tertiary};
-  /* position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2; */
+  z-index: 2;
 
   .navigation {
     max-width: 1200px;

@@ -6,7 +6,8 @@ const QuemPodeContratar: React.FC<{ white?: boolean }> = ({ white = true }) => {
       bgColor={white ? "gray" : "tertiary"}
       img={{
         url: "/images/people.svg",
-        alt: "imagem de contato",
+        alt:
+          "Ilustração de moça e rapaz surpresos que os serviços são para todes",
         align: "right",
         props: {
           width: 1000,

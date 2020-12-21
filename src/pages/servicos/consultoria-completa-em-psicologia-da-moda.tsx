@@ -40,7 +40,8 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/clothes.svg",
-          alt: "",
+          alt:
+            "Ilustração de moça observando uma vitrine para escolher um dos três vestidos expostos",
           align: "left",
           props: {
             width: 1000,
@@ -93,7 +94,8 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/key_points2.svg",
-          alt: "",
+          alt:
+            "Ilustração de uma mulher ao lado de um fluxograma de informações",
           align: "left",
           props: {
             width: 1000,
@@ -117,7 +119,8 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/shopping2.svg",
-          alt: "",
+          alt:
+            "Ilustração de uma mulher comemorando feliz segurando sacolas de compras",
           align: "right",
           props: {
             width: 1000,
@@ -142,7 +145,7 @@ export default function Index() {
         bgColor="gray"
         img={{
           url: "/images/makeup.svg",
-          alt: "",
+          alt: "Ilustração de um maqueador maqueando uma mulher",
           align: "left",
           props: {
             width: 1000,
@@ -172,7 +175,7 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/jewelry.svg",
-          alt: "",
+          alt: "Ilustração de uma moça bem vestida",
           align: "right",
           props: {
             width: 1000,
@@ -204,7 +207,7 @@ export default function Index() {
         title={{
           text: "Se encontre no seu guarda-roupas e simplifique a sua rotina.",
           as: "h2",
-          color: "tertiary",
+          color: "gray",
           align: "center",
         }}
       />

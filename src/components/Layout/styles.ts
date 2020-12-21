@@ -19,6 +19,8 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
 
+  margin-top: 70px;
+
   @media (min-width: 769px) {
     & {
       flex: 1 1 auto;
