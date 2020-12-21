@@ -35,9 +35,11 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/tour.svg",
-          alt: "imagem de contato",
+          alt:
+            "Ilustração de três pessoas escolhendo um entre os diversos quadros de serviços overtados",
           align: "right",
           props: {
             width: 1000,
@@ -69,7 +71,8 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/conversation2.svg",
-          alt: "imagem de contato",
+          alt:
+            "Ilustração de duas pessoas sentadas em um escritório conversando",
           align: "left",
           props: {
             width: 1000,
@@ -95,9 +98,11 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/key_points.svg",
-          alt: "imagem de contato",
+          alt:
+            "Ilustração de uma mulher mostrando resultados de um gráfico em um quadro",
           align: "right",
           props: {
             width: 1000,
@@ -125,7 +130,8 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/question.svg",
-          alt: "imagem de contato",
+          alt:
+            "Ilustação de mulher apontando com uma lanterna para um ícone de questionamento para clarear as dúvidas",
           align: "left",
           props: {
             width: 1000,

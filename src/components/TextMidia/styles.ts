@@ -38,7 +38,7 @@ export const Content = styled.div<{ hasImage?: boolean }>`
   }
 `;
 
-export const ImageWarper = styled.div<{ imgAling?: string }>`
+export const ImageWarper = styled.div<{ imgAling?: string; imgGlow?: boolean }>`
   margin: 0 ${(props) => (props.imgAling === "right" ? 0 : "1rem")} 0
     ${(props) => (props.imgAling === "left" ? 0 : "1rem")};
   order: ${(props) => (props.imgAling === "right" ? 1 : 0)};
@@ -49,4 +49,17 @@ export const ImageWarper = styled.div<{ imgAling?: string }>`
       order: 0;
     }
   }
+
+  ${(props) =>
+    props.imgGlow &&
+    css`
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: ${config.color.primary};
+      padding: 10px;
+
+      img {
+        border-radius: 50%;
+      }
+    `}
 `;

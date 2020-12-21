@@ -20,12 +20,12 @@ export const Container = styled.section<{
   padding: 1.5rem;
 
   background: ${(props) =>
-    props.bgColor ? config.color[props.bgColor] : config.color.primaryDark};
+    props.bgColor ? config.color[props.bgColor] : config.color.primary};
   ${(props) =>
     props.urlImg &&
     css`
       background: url(${props.urlImg}); /* fallback */
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      background: linear-gradient(rgba(103, 0, 51, 0.3), rgba(103, 0, 51, 0.3)),
         url(${props.urlImg}) no-repeat;
     `};
   background-repeat: no-repeat;
@@ -37,7 +37,6 @@ export const Container = styled.section<{
   }
 
   @media (max-width: 769px) {
-    margin-top: 70px;
     padding: 2.5rem 1.5rem;
 
     ${(props) =>
@@ -50,7 +49,10 @@ export const Container = styled.section<{
       props.urlImg &&
       css`
         background: url(${props.urlImg}); /* fallback */
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        background: linear-gradient(
+            rgba(103, 0, 51, 0.3),
+            rgba(103, 0, 51, 0.3)
+          ),
           url(${props.urlImg.replace(".jpg", "-mob.jpg")}) no-repeat;
       `};
 

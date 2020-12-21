@@ -33,9 +33,11 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/personal.svg",
-          alt: "",
+          alt:
+            "Ilustação de moça segurando uma placa no formato de balão de conversas",
           align: "left",
           props: {
             width: 1000,
@@ -62,7 +64,7 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/palette.svg",
-          alt: "",
+          alt: "Ilustração de mulher pensativa com vários circulos de cores",
           align: "right",
           props: {
             width: 1000,
@@ -93,9 +95,11 @@ export default function Index() {
       />
 
       <TextMidia
+        bgColor="gray"
         img={{
           url: "/images/clothes.svg",
-          alt: "",
+          alt:
+            "Ilustração de moça observando uma vitrine para escolher um dos três vestidos expostos",
           align: "left",
           props: {
             width: 1000,
@@ -123,7 +127,7 @@ export default function Index() {
         bgColor="tertiary"
         img={{
           url: "/images/gift.svg",
-          alt: "",
+          alt: "Ilustração de uma caixa de presente com um laçoe balões",
           align: "right",
           props: {
             width: 1000,
