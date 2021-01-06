@@ -72,12 +72,7 @@ export default function Index() {
           },
         }}
         title={{
-          text: (
-            <>
-              Análise de coloração <br />
-              <small>(apenas presencial)</small>
-            </>
-          ),
+          text: "Análise de coloração",
           as: "h2",
           align: "center",
           color: "primary",
@@ -107,7 +102,7 @@ export default function Index() {
           },
         }}
         title={{
-          text: "Consultoria Completa em Psicologia da Moda",
+          text: "TranspareSer",
           as: "h2",
           align: "center",
           color: "primary",
@@ -115,10 +110,10 @@ export default function Index() {
         description={{
           align: "center",
           text:
-            "Nem terapia, nem consultoria de estilo, conheça a Consultoria Completa em Psicologia da Moda",
+            "Nem terapia, nem consultoria de estilo, uma imersão em si mesma",
         }}
         cta={{
-          href: "/servicos/consultoria-completa-em-psicologia-da-moda",
+          href: "/servicos/transpare-ser",
           text: "Saiba mais",
         }}
       />

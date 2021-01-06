@@ -11,13 +11,9 @@ import QuemPodeContratar from "../../containers/QuemPodeContratar";
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/servicos/consultoria-completa-em-psicologia-da-moda"} />
-      <OpenGraphMeta
-        url={"/servicos/consultoria-completa-em-psicologia-da-moda"}
-      />
-      <TwitterCardMeta
-        url={"/servicos/consultoria-completa-em-psicologia-da-moda"}
-      />
+      <BasicMeta url={"/servicos/transpare-ser"} />
+      <OpenGraphMeta url={"/servicos/transpare-ser"} />
+      <TwitterCardMeta url={"/servicos/transpare-ser"} />
 
       <Hero
         size="sm"
@@ -25,7 +21,7 @@ export default function Index() {
           as: "h1",
           color: "light",
           align: "center",
-          text: "Consultoria Completa em Psicologia da Moda",
+          text: "TranspareSer",
           decorator: true,
         }}
         description={{
@@ -41,23 +37,30 @@ export default function Index() {
         img={{
           url: "/images/clothes.svg",
           alt:
-            "Ilustração de moça observando uma vitrine para escolher um dos três vestidos expostos",
+            "Ilustração de moça observando uma vitrine para escolher um dos três vestidos",
           align: "left",
           props: {
             width: 1000,
             height: 800,
           },
         }}
-        title={{ text: "Se você:", as: "h2", color: "primary" }}
+        title={{
+          text:
+            "Se você quer se conhecer, olhar pra você de um jeito que nunca fez antes e com isso:",
+          as: "h2",
+          color: "primary",
+        }}
         description={{
           as: "ul",
           text: (
             <>
-              <li>Nunca tem o que vestir (mesmo tendo várias roupas)</li>
-              <li>Tem dificuldade em montar looks</li>
-              <li>Não se sente bem com seus acessórios</li>
-              <li>Acha que não tem estilo</li>
-              <li>Sente que suas roupas não te representam</li>
+              <li>Resgatar sua autoestima</li>
+              <li>Desenvolver autoconfiança</li>
+              <li>Entender seu estilo</li>
+              <li>Descobrir suas melhores cores</li>
+              <li>Aproveitar ao máximo o que já tem</li>
+              <li>Fazer compras inteligentes</li>
+              <li>Ser mais autêntica</li>
             </>
           ),
         }}
@@ -75,15 +78,14 @@ export default function Index() {
           color: "light",
           align: "center",
           text:
-            "Com a Consultoria Completa em Psicologia da Moda você tem a oportunidade de se conhecer melhor, se reconectar com a sua essência e assim promover a mudança de imagem pessoal que deseja, acompanhando o desenvolvimento interno adquirido.",
+            "Com a TranspareSer você tem a oportunidade de se conhecer melhor, se reconectar com a sua essência e assim promover a mudança de imagem pessoal que deseja, acompanhando o desenvolvimento interno adquirido.",
         }}
       />
 
       <TextMidia
         bgColor="gray"
         title={{
-          text:
-            "Conheça as etapas da Consultoria Completa em Psicologia da Moda:",
+          text: "Conheça as etapas da TranspareSer:",
           as: "h2",
           color: "primary",
           align: "center",
