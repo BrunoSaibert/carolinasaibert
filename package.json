@@ -39,6 +39,7 @@
     "@types/react": "^16.9.32",
     "@types/react-icons": "^3.0.0",
     "@types/styled-components": "^5.1.4",
+    "dotenv": "^8.2.0",
     "jest": "^26.3.0",
     "ts-jest": "^26.2.0",
     "typescript": "^3.8.3",
