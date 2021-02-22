@@ -11,7 +11,7 @@ import QuemPodeContratar from "../../containers/QuemPodeContratar";
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/servicos"} />
+      <BasicMeta title="Serviço" url={"/servicos"} />
       <OpenGraphMeta url={"/servicos"} />
       <TwitterCardMeta url={"/servicos"} />
 

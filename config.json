@@ -31,10 +31,6 @@
   },
   "pages": [
     {
-      "title": "Início",
-      "url": "/"
-    },
-    {
       "title": "Como Funciona",
       "url": "/como-funciona"
     },

@@ -4,7 +4,7 @@ import config from "../../lib/config";
 
 export const Container = styled.div`
   display: block;
-  background-color: ${config.color.tertiary};
+  background-color: ${config.color.primaryDark};
   position: fixed;
   top: 0;
   left: 0;
@@ -33,7 +33,7 @@ export const Container = styled.div`
 
       a {
         font-weight: 600;
-        color: ${config.color.light};
+        color: ${config.color.gray};
         text-decoration: none;
         transition: all 0.3s ease;
         text-transform: lowercase;
@@ -41,8 +41,8 @@ export const Container = styled.div`
         &:active,
         &:hover,
         &.current {
-          color: ${config.color.primary};
-          border-bottom: 1px solid ${config.color.primary};
+          color: ${config.color.light};
+          border-bottom: 1px solid ${config.color.light};
         }
       }
     }

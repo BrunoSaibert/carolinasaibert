@@ -11,7 +11,10 @@ import QuemPodeContratar from "../../containers/QuemPodeContratar";
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/servicos/psicoterapia-individual"} />
+      <BasicMeta
+        title="Serviço - Psicoterapia individual"
+        url={"/servicos/psicoterapia-individual"}
+      />
       <OpenGraphMeta url={"/servicos/psicoterapia-individual"} />
       <TwitterCardMeta url={"/servicos/psicoterapia-individual"} />
 

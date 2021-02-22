@@ -48,7 +48,7 @@ export const Button = styled.a`
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/contato"} />
+      <BasicMeta title="Contato" url={"/contato"} />
       <OpenGraphMeta url={"/contato"} />
       <TwitterCardMeta url={"/contato"} />
 

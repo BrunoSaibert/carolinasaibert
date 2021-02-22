@@ -9,7 +9,7 @@ import TextMidia from "../components/TextMidia";
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/sobre"} />
+      <BasicMeta title="Sobre" url={"/sobre"} />
       <OpenGraphMeta url={"/sobre"} />
       <TwitterCardMeta url={"/sobre"} />
 

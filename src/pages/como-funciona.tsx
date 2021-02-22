@@ -13,7 +13,7 @@ import QuemPodeContratar from "../containers/QuemPodeContratar";
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/como-funciona"} />
+      <BasicMeta title="Como funciona" url={"/como-funciona"} />
       <OpenGraphMeta url={"/como-funciona"} />
       <TwitterCardMeta url={"/como-funciona"} />
 

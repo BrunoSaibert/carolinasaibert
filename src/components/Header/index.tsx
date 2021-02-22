@@ -17,14 +17,21 @@ const Header: React.FC = () => {
   return (
     <S.Container className={active ? "active" : ""}>
       <div className={"navigation " + (active ? "active" : "")}>
-        <Brand />
+        <Brand color="light" />
         <Burger active={active} onClick={() => setActive(!active)} />
 
         <ul>
+          <li>
+            <Link href="/">
+              <a className={router.pathname === "/" ? "current" : null}>
+                Início
+              </a>
+            </Link>
+          </li>
           {config.pages.map(({ title, url }) => (
             <li key={url}>
               <Link href={url}>
-                <a className={router.pathname === url ? "current" : null}>
+                <a className={router.pathname.includes(url) ? "current" : null}>
                   {title}
                 </a>
               </Link>

@@ -11,7 +11,10 @@ import QuemPodeContratar from "../../containers/QuemPodeContratar";
 export default function Index() {
   return (
     <Layout>
-      <BasicMeta url={"/servicos/analise-de-coloracao"} />
+      <BasicMeta
+        title="Serviço - Análise de coloração"
+        url={"/servicos/analise-de-coloracao"}
+      />
       <OpenGraphMeta url={"/servicos/analise-de-coloracao"} />
       <TwitterCardMeta url={"/servicos/analise-de-coloracao"} />
 
