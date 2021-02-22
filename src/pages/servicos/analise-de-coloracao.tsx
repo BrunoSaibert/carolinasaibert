@@ -55,7 +55,7 @@ export default function Index() {
             "Com a análise de coloração pessoal você descobre as cores que mais harmonizam com a sua beleza natural, as cores que mais te valorizam.",
         }}
         cta={{
-          href: "/contaro",
+          href: "/contato",
           text: "Contrate agora",
         }}
       />
